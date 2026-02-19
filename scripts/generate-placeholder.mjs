@@ -10,7 +10,7 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
     text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
     .dot {
       transform: translate(0px, 0px);
-      animation: move 1.4s linear infinite;
+      animation: move 600s linear infinite;
     }
     @keyframes move {
       from { transform: translate(0px, 0px); }
@@ -19,7 +19,7 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
   </style>
 
   <rect x="0" y="0" width="900" height="220" rx="18" fill="#0d1117"/>
-  <text x="24" y="54" font-size="28" fill="#c9d1d9">⛏️ Minecraft miner (placeholder) Anim test</text>
+  <text x="24" y="54" font-size="28" fill="#c9d1d9">⛏️ Minecraft miner (placeholder) Anim test </text>
   <text x="24" y="92" font-size="16" fill="#8b949e">Dernière génération: ${now}</text>
 
   <rect x="24" y="140" width="180" height="18" rx="9" fill="#21262d"/>
@@ -27,6 +27,6 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
 </svg>
 `;
 
-writeFileSync("dist/miner.svg", svg, "utf8");
-console.log("✅ dist/miner.svg généré");
+writeFileSync("exports/miner.svg", svg, "utf8");
+console.log("exports/miner.svg généré");
 
